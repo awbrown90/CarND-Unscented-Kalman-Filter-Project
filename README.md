@@ -1,7 +1,56 @@
 # Unscented Kalman Filter Project Starter Code
 Self-Driving Car Engineer Nanodegree Program
 
----
+In this project an Unscented Kalman Filter was used to track various objects given noisy lidar and radar measurement data. The UKF was able to succesfully fuse the two different kinds of measurements together even though lidar was in cartesian coordinates and radar was in polar. Although radar was not as accurate spatially as lidar, it could directly measure the velocity of objects. 
+
+## UKF Performance on data
+#### sample-laser-radar-measurement-data-1.txt 
+
+Parameters
+
+std_a_ = 0.6;
+
+std_yawdd_ = 0.6;
+
+Accuracy - RMSE:
+
+0.072281
+
+0.0780509
+
+0.586903
+
+0.572921
+
+NIS Laser Percent 1
+
+NIS Radar Percent 0.833333
+
+#### sample-laser-radar-measurement-data-2.txt
+
+Parameters
+
+std_a_ = 0.6;
+
+std_yawdd_ = 0.6;
+
+Accuracy - RMSE:
+
+0.192021
+
+0.188751
+
+0.353605
+
+0.499168
+
+NIS Laser Percent 0.99
+
+NIS Radar Percent 0.99
+
+### Visuals
+
+All provided data samples can be visually inspected by using the included ukf-visualization jupyter notebook file which also includes graphs for LASER and RADAR NIS values.
 
 ## Dependencies
 
